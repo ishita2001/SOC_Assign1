@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Index 5</title>
+    </head>
+
+    <script>
+        function Run(){
+            var data=document.getElementById("url").value;
+
+            var link = document.getElementById("frame")
+            link.setAttribute("src",data);
+
+            var ht = document.getElementById("h").value;
+            link.setAttribute("height",ht);
+
+            var wd = document.getElementById("w").value;
+            link.setAttribute("width",wd);
+        }
+
+    </script>
+
+    <body>
+        <h1>My First sub-window</h1> <br>
+        <input id ="url" type="text"  placeholder="enter url">
+        <input type="text" placeholder = "enter height" id="h"> 
+        <input type="text" placeholder = "enter width" id="w"> 
+        <input type="button" value="Go" onclick = "Run()"> <br>
+        <iframe id = "frame" ></iframe>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Index 4</title>
+    </head>
+
+    <script>
+        function Run(){
+            var data=document.getElementById("url").value;
+
+            var link = document.getElementById("frame")
+            link.setAttribute("src",data);
+        }
+
+    </script>
+
+    <body>
+        <h1>My First sub-window</h1> <br>
+        <input id ="url" type="text"  placeholder="enter url"><br>
+        <input type="button" value="Go" onclick = "Run()"> <br>
+        <iframe id = "frame" height = "70%" width = "70%"></iframe>
+    </body>
+</html>
